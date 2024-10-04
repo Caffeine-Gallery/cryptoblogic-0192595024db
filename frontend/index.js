@@ -40,10 +40,10 @@ async function displayPosts() {
   posts.reverse().forEach(post => {
     const article = document.createElement('article');
     article.innerHTML = `
-      <h2>${post.title}</h2>
+      <h2>🎈 ${post.title} 🎈</h2>
       <p class="author">By ${post.author}</p>
       <div class="content">${post.body}</div>
-      <p class="timestamp">${new Date(Number(post.timestamp) / 1000000).toLocaleString()}</p>
+      <p class="timestamp">🕰 ${new Date(Number(post.timestamp) / 1000000).toLocaleString()} 🕰</p>
     `;
     postsSection.appendChild(article);
   });
